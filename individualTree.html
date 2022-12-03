@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Italian Garden Project: View All Trees </title>
+    <!--fonts-->
+    <link href="https://blogfonts.com/css/aWQ9MTIzODIyJnN1Yj04MjImYz1iJnR0Zj1CRCtFbmdyYXZlZCtSZWd1bGFyLnR0ZiZuPWJkLWVuZ3JhdmVkLXJlZ3VsYXItMw/BD Engraved Regular.ttf" rel="stylesheet" type="text/css"/>
+    <!-- baskerville font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
+
+    <!--link to bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--link to CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+
+<body class="mediumgreen align-content-center ">
+    <!--navigation bar-->
+    <nav class="navbar top darkgreen"> 
+        <div class="container-fluid">
+            <button class="navbar-toggler border-white border-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="height navbar-toggler-icon turnWhite"></span> <!--hamburger bar-->
+            </button>
+
+            <div class="offcanvas offcanvas-start lightgreen w-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"> <!--offcanvas navbar content-->
+                <div class="offcanvas-header position-absolute top-0 end-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> <!--Close out of hamburger-->
+                </div>
+            
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-4 pe-3">
+                        <li class="nav-item"> <!--homepage/active page-->
+                            <a class="nav-link active" aria-current="page" href="index.html"> <h4 class="upspace">HOME</h4> </a>
+                        </li>
+                        <li class="nav-item"> <h4>TREES</h4> <!--need to replace with real links-->
+                            <li> <a class="nav-link indent" href="#"> SCAN QR CODE </a></li>
+                            <li> <a class="nav-link indent" href="trees.html"> VIEW ALL TREES </a></li>
+                            <li> <a class="nav-link indent" href="#"> SHOP TREES </a></li>
+                            <li> <a class="nav-link indent" href="#"> FIG TREE CARE </a></li> 
+                        </li>
+                        <li class="nav-item"> <h4 class="upspace">RESOURCES</h4> <!--need to replace with real links-->
+                            <li> <a class="nav-link indent" href="#"> ABOUT US </a></li>
+                            <li> <a class="nav-link indent" href="https://www.theitaliangardenproject.com/legacy-fig-tree-collection"> OUR WEBSITE </a></li>
+                            <li> <a class="nav-link indent" href="#"> CONTACT </a></li>
+                            <li> <a class="nav-link indent" href="donate.html"> DONATE </a></li> 
+                        </li>
+                    </ul>
+
+                    <div class="d-flex justify-content-evenly"> <!--social media icons-->
+                        <a class="social turnWhite" href="https://www.instagram.com/theitaliangardenproject/"> <!--links do not need to open in new tab because we are using mobile/tablet-->
+                            <img src="images/instagram.png" alt="instagram" width="30" height="30">
+                        </a>
+                        <a class="social turnWhite" href="https://www.facebook.com/theitaliangardenproject/">
+                            <img src="images/facebook.png" alt="instagram" width="30" height="30">
+                        </a>
+                        <a class="social turnWhite" href="https://www.youtube.com/channel/UCwJrRt4J_EbrK0lkT2EF5AQ">
+                            <img src="images/youtube.png" alt="instagram" width="30" height="30">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a class="navbar-brand" href="index.html"> <!--logo that will return to homepage-->
+                <img class="nav" src="images/logo.png" alt="Return to Index">
+            </a>
+
+            <a href="#"> <!--need to replace with real links to shopping cart-->
+                <img class="height turnWhite" src="images/shopping-cart.png" alt="Open Cart">
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- breadcrumb to go back to view all trees page  -->
+    <nav aria-label="breadcrumb" id="indTreeBreadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="trees.html"> <em>&lt View All Trees</em></a></li>
+        </ol>
+    </nav>
+
+    <!-- tree name -->
+    <div id="sabatinoHeading" class="mediumgreen">
+        <h1>SABATINO TREE</h1>
+    </div>
+
+    <!-- video -->
+    <div id="treeVideo" class="d-flex justify-content-center">
+        <div class="map-responsive w-75">
+            <iframe src="https://www.youtube.com/embed/6RO-AsQDa6s?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- description -->
+    <div id="treeOverview" class="row d-flex justify-content-center">
+        <div id="treeDescriptions" class="lightgreen w-75">
+            <p><b>Owner:</b> Sabatino DiNardo</p>
+            <p><b>Birthplace:</b> San Vito Lanciano, Abruzzo, Italy</p>
+            <p><b>Year Brought to USA:</b> 2020</p>
+            <p><b>Now Grown in:</b> Pittsburgh, PA, USA</p>
+            <p><b>Year Given to Us:</b> 2020</p>
+            <p><b>Fig Variety:</b> White Fig Tree</p>
+        </div>
+    </div>
+
+    <!-- images gallery --> 
+    <div id="carouselExampleIndicators" class="carousel dark slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/sabatino4.png" class="w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/sabatino1.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/sabatino3.JPG" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+ 
+
+    <!-- interactive map -->
+    <div class="d-flex justify-content-center">
+        <div class="map-responsive w-75">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d25053020.78267764!2d-50.7375592096355!3d39.958608430869994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x13310317ce84e35b%3A0x893f472965b3d751!2sSan%20Vito%20Lanciano%2C%2066038%20Marina%20di%20San%20Vito%20CH%2C%20Italy!3m2!1d42.305802199999995!2d14.4405018!4m5!1s0x8834f16f48068503%3A0x8df915a15aa21b34!2sPittsburgh%2C%20PA!3m2!1d40.440624799999995!2d-79.9958864!5e0!3m2!1sen!2sus!4v1669771565256!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+        </div>
+    </div>
+
+    <!-- scan qr code button -->
+    <div id="nextScan">
+        <h2>Use the buttom below to continue to the next tree and resume your tour: </h2>
+        <button type="button" class="home btn btn-outline-light">SCAN QR CODE</button>
+    </div>
+
+    <!-- scroll down indicator -->
+    <button id="scroll" class="rounded-circle border-3 border-white position-fixed start-50 translate-middle"> 
+        <img class="turnWhite height width" src="images/arrow.png" alt="scroll indication">
+    </button>
+
+    <!-- script links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="arrow.js"> </script>
+
+    <footer>
+        <!-- footer for the mobile pages -->
+        <div id="subscribeFooter" class="darkgreen">
+          <h3>Help us preserve and document Italian American gardening heritage.
+              Be a part of Italian American history!                
+          </h3>
+          <a href="donate.html">
+            <button type="button" class="support btn btn-outline-light">SUPPORT OUR WORK</button>
+          </a>
+        </div>
+  
+    
+      </footer>
+</body>
+</html>

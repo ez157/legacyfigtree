@@ -1,0 +1,301 @@
+/* load downloaded fonts */
+@font-face {
+    font-family: 'American Scribe';
+    src: url(fonts/American\ Scribe.ttf);
+}
+
+@font-face {
+    font-family: 'BD Engraved';
+    src: url(fonts/BD\ Engraved\ Regular.ttf);
+}
+
+* {
+    color: white;
+}
+
+.darkgreen {
+    background-color: #464C43;
+}
+
+.lightgreen {
+    background-color: #90B082;
+    width: 100vw;
+}
+
+.mediumgreen {
+    background-color: #657160;
+}
+
+
+.nav {
+    max-height: 10vh;
+    width: auto;
+}
+
+.navlink {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.offcanvas {
+    max-width: 550px;
+}
+
+.indent {
+    color: white;
+    font-size: 1rem;
+    margin-left: 50px;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-item, .nav-link.indent {
+    font-family: 'BD Engraved', serif;
+}
+
+.upspace {
+    margin-top: 15px;
+}
+
+.social {
+    margin-top: 5vh;    
+}
+
+.turnWhite {
+    filter: invert(1);
+}
+
+.height {
+    height: 7vh;
+}
+
+.width {
+    width: 6vh;
+}
+
+#donationBanner {
+    text-align: center;
+    min-height: 10vh;
+    font-family: 'Baskerville';
+    padding-bottom: 1vh;
+}
+
+.donateP, .donateB {
+    color: #464C43;
+    padding-top: 2vh;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+#mainBody, #nextScan{
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+.IGPtitle{
+    font-family: 'American Scribe', serif;
+    font-size: 2.75rem;
+    padding: 3vh;
+}
+
+h2 {
+    padding: 3vh 4vh 3vh 4vh;
+    font-family: 'Baskervville', serif;
+    font-size: 1.25rem;
+}
+
+/* button styles */
+.home.btn.btn-outline-light{
+    background-color: #90B082 !important;
+    font-size: 1.25rem;
+    font-family: 'Baskervville';
+    padding: 1vh 5vh 1vh 5vh;
+}
+
+.contact.btn.btn-outline-light{
+    background-color:#657160 !important;
+    font-size: 1.2rem;
+    font-family: 'Baskervville';
+    padding: 1vh 9vh 1vh 9vh;
+}
+
+.support.btn.btn-outline-light{
+    background-color:#657160 !important;
+    font-size: 1.2rem;
+    font-family: 'Baskervville';
+    padding: 1vh 3vh 1vh 3vh;
+}
+
+.donate.btn.btn-outline-light, .donate.btn.btn-outline-light a {
+    background-color: #90B082 !important;
+    font-size: 1.25rem;
+    font-family: 'Baskervville';   
+    color: white;
+    padding: 1vh 5vh 1vh 5vh;
+    text-decoration: none;
+}
+
+
+#scroll {
+    background-color:#657160;  
+    display: block;
+    bottom: 5vh;
+}
+
+/* footer styles */
+#contactFooter, #subscribeFooter, #subscribeFooterMobile, #subscribeFooterTablet {
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+h3 {
+    padding: 5vh 5vh 2vh 5vh;
+    font-family: 'Baskervville', serif;
+    font-size: 1rem;
+}
+
+/* Donation Page */
+#donateFooter {
+    background-color: #464C43;
+    font-family: 'Baskervville', serif;
+    padding: 25px;
+}
+
+#IA-His {
+    font-family: 'BD Engraved', serif;
+}
+#aboutDonations {
+    font-family: 'Baskerville';
+    line-height: 150%;
+    text-align: left;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-bottom: 5vh;
+}
+
+#donateContent {
+    text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+    #aboutDonations {
+        font-family: 'Baskerville';
+        line-height: 150%;
+        text-align: left;
+        margin-left: 175px;
+        margin-right: 175px;
+    }
+
+    h2 {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+
+/* trees page */
+#allTreesHeading, #sabatinoHeading {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'BD Engraved', serif;
+    font-size: 2rem;
+    padding: 3vh;
+}
+
+.card-title {
+    font-family: 'Baskervville', serif;
+    padding-top: 2vh;
+}
+
+.card-img {
+    padding: 1vh 0vh 1vh 1vh;
+}
+
+/* initially display footer for the mobile view */
+#subscribeFooterMobile {
+    display: block;
+}
+
+#subscribeFooterTablet {
+    display: none;
+}
+
+/* only display footer for the tablet view once screen size increases */
+@media (min-width: 768px) {
+    #subscribeFooterMobile {
+        display: none;
+    }
+    
+    #subscribeFooterTablet {
+        display: block;
+    }
+}
+
+/* individual tree page */
+#indTreeBreadcrumb{
+    padding: 2vh 1vh 0vh 2vh;
+}
+
+.breadcrumb-item a, .breadcrumb-item em{
+    color:#90B082;
+    font-family: 'Baskervville';
+}
+
+.breadcrumb-item.active {
+    color:white;
+    font-family: 'Baskervville';
+}
+
+#treeDescriptions {
+    padding-top: 1vh;
+    padding-right: 1vh;
+}
+
+#treeDescriptions p, #treeDescriptions b{
+    color: white;
+    font-family: 'Baskervville';
+}
+
+#treeVideo, #treeOverview, #imageGallery {
+    padding-bottom: 5vh;
+}
+
+#treeOverview, #treeDescriptions {
+    border-radius: 2%;
+}
+
+#carousel, #carouselExampleIndicators, #carousel-inner {
+    width: 75%;
+    margin: auto;
+    padding-bottom: 5vh;
+}
+
+
+#map {
+    /* width: 75%; */
+    width: 75%;
+    margin: auto;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+

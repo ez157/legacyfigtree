@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Italian Garden Project: Homepage </title>
+    <!--fonts-->
+    <link href="https://blogfonts.com/css/aWQ9MTIzODIyJnN1Yj04MjImYz1iJnR0Zj1CRCtFbmdyYXZlZCtSZWd1bGFyLnR0ZiZuPWJkLWVuZ3JhdmVkLXJlZ3VsYXItMw/BD Engraved Regular.ttf" rel="stylesheet" type="text/css"/>
+    <!-- baskerville font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
+
+    <!--link to bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!--link to CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<!-- bootstrap elements used: navbar, breadcrumb, carousel, placeholder, and cards -->
+
+<body>
+    <!--navigation bar-->
+    <nav class="navbar top darkgreen"> 
+        <div class="container-fluid">
+            <button class="navbar-toggler border-white border-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="height navbar-toggler-icon turnWhite"></span> <!--hamburger bar-->
+            </button>
+
+            <div class="offcanvas offcanvas-start lightgreen w-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"> <!--offcanvas navbar content-->
+                <div class="offcanvas-header position-absolute top-0 end-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> <!--Close out of hamburger-->
+                </div>
+            
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-4 pe-3">
+                        <li class="nav-item"> <!--homepage/active page-->
+                            <a class="nav-link active" aria-current="page" href="index.html"> <h4 class="upspace">HOME</h4> </a>
+                        </li>
+                        <li class="nav-item"> <h4>TREES</h4> <!--need to replace with real links-->
+                            <li> <a class="nav-link indent" href="#"> SCAN QR CODE </a></li>
+                            <li> <a class="nav-link indent" href="trees.html"> VIEW ALL TREES </a></li>
+                            <li> <a class="nav-link indent" href="#"> SHOP TREES </a></li>
+                            <li> <a class="nav-link indent" href="#"> FIG TREE CARE </a></li> 
+                        </li>
+                        <li class="nav-item"> <h4 class="upspace">RESOURCES</h4> <!--need to replace with real links-->
+                            <li> <a class="nav-link indent" href="#"> ABOUT US </a></li>
+                            <li> <a class="nav-link indent" href="https://www.theitaliangardenproject.com/legacy-fig-tree-collection"> OUR WEBSITE </a></li>
+                            <li> <a class="nav-link indent" href="#"> CONTACT </a></li>
+                            <li> <a class="nav-link indent" href="donate.html"> DONATE </a></li> 
+                        </li>
+                    </ul>
+
+                    <div class="d-flex justify-content-evenly"> <!--social media icons-->
+                        <a class="social turnWhite" href="https://www.instagram.com/theitaliangardenproject/"> <!--links do not need to open in new tab because we are using mobile/tablet-->
+                            <img src="images/instagram.png" alt="instagram" width="30" height="30">
+                        </a>
+                        <a class="social turnWhite" href="https://www.facebook.com/theitaliangardenproject/">
+                            <img src="images/facebook.png" alt="instagram" width="30" height="30">
+                        </a>
+                        <a class="social turnWhite" href="https://www.youtube.com/channel/UCwJrRt4J_EbrK0lkT2EF5AQ">
+                            <img src="images/youtube.png" alt="instagram" width="30" height="30">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a class="navbar-brand" href="index.html"> <!--logo that will return to homepage-->
+                <img class="nav" src="images/logo.png" alt="Return to Index">
+            </a>
+
+            <a href="#"> <!--need to replace with real links to shopping cart-->
+                <img class="height turnWhite" src="images/shopping-cart.png" alt="Open Cart">
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- donation banner -->
+    <div id="donationBanner" class="lightgreen"> 
+        <p id="donateP">Help us preserve Italian gardening heritage.</p>
+        <a href="donate.html" id="donate"> <b id="donateB">DONATE HERE !</b> </a>
+    </div>
+
+    <!-- homepage title, video, scan qr code instructions, scan qr code button -->
+    <div id="mainBody" class="mediumgreen">
+        <h1 class="IGPtitle"> The Italian Garden Project Foundation </h1>
+        <img class="w-75" src="images/instructionVideo.png" alt="placeholder video">
+        <h2>Welcome to your fig tree tour! 
+            Use the button below to scan a QR located on a tree’s plaque to learn more about it.
+        </h2>
+        <button type="button" class="home btn btn-outline-light">SCAN QR CODE</button>
+    </div>
+
+    <!-- scroll down button -->
+    <button id="scroll" class="rounded-circle border-3 border-white position-fixed start-50 translate-middle"> 
+        <img class="turnWhite height width" src="images/arrow.png" alt="scroll indication">
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="arrow.js"> </script>
+
+    <!-- footer with contact description and button -->
+    <footer>
+        <div id="contactFooter" class="darkgreen">
+            <h3>Have questions or want to share a comment?
+                We want to hear from you...
+            </h3>
+            <button type="button" class="contact btn btn-outline-light">CONTACT</button>
+        </div>
+    </footer>
+</body>
+</html>
